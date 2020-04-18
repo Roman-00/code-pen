@@ -1,21 +1,9 @@
 'use strict';
 
-class First {
-  hello () {
-    console.log('Привет я метод родителя!');
-  }
-}
-
-class Second extends First {
-  constructor() {
-    super();
-    this.fromSecond();
-  }
+function getResult(x,y){
+  let result = x ** y;
   
-  fromSecond() {
-    this.hello();
-    console.log('А я наследуемый метод!');
-  }
+  return result;
 }
 
-new Second();
+console.log(getResult(4, 8))
